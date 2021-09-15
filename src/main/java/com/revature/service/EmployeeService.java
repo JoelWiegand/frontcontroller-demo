@@ -1,5 +1,6 @@
 package com.revature.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.revature.dao.EmployeeDao;
@@ -30,5 +31,9 @@ public class EmployeeService {
 
 	public boolean delete(Employee e) {
 		return edao.delete(e);
+	}
+
+	public List<Employee> findAll() {
+		return edao.findAll();
 	}
 }
